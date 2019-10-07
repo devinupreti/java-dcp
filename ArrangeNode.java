@@ -6,6 +6,12 @@ rearrange the node values in low->high->low->high ... form
 EXAMPLE:
 Input : 1->2->3->4->5
 Output : 1->3->2->5->4
+
+Solution : 
+Swap nodes whenever property not satisfied
+if a<b and b<c then a<c
+
+Time : O(n) | Space : O(1)
 */
 class Node{
     int value;
@@ -84,8 +90,7 @@ public class ArrangeNode {
 
     // Input : 1->2->3->4->5
     // Output : 1->3->2->5->4
-    // Solution : Swap nodes whenever property not satisfied
-    // if a<b and b<c then a<c
+   
     public static void arrangeNodes(Node linkedList)
     {
         Node head = makeLowHigh(linkedList);
