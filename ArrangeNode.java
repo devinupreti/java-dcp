@@ -10,7 +10,6 @@ Output : 1->3->2->5->4
 Solution : 
 Swap nodes whenever property not satisfied
 if a<b and b<c then a<c
-
 Time : O(n) | Space : O(1)
 */
 class Node{
